@@ -1,0 +1,38 @@
+{
+  "name": "relationdesk/retriever-services-sdk",
+  "description": "A Laravel SDK for Retriever Services",
+  "type": "library",
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^11.0",
+    "illuminate/http": "^11.0",
+    "illuminate/config": "^11.0",
+    "illuminate/cache": "^11.0",
+    "phpoption/phpoption": "^1.9",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "mockery/mockery": "^1.6",
+    "illuminate/container": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RelationDesk\\RetrieverServicesSdk\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RelationDesk\\RetrieverServicesSdk\\Providers\\YourPackageServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
