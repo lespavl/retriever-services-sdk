@@ -1,5 +1,5 @@
 {
-  "name": "relationdesk/retriever-services-sdk",
+  "name": "lespavl/retriever-services-sdk",
   "description": "A Laravel SDK for Retriever Services",
   "type": "library",
   "require": {
