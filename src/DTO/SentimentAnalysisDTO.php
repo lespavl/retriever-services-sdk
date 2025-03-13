@@ -8,4 +8,16 @@ class SentimentAnalysisDTO extends BaseDTO
     public array $text_id;
     public array $score;
     public array $label;
+
+    public function getDataById(): array
+    {
+        $result = [];
+        foreach ($this->text_id as $index => $textId) {
+            $result[$textId] = [
+                'score' => $this->score[$index] ?? null,
+                'label' => $this->label[$index] ?? null,
+            ];
+        }
+        return $result;
+    }
 }
