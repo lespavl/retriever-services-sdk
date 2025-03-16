@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'enabled' => env('RETRIEVER_SERVICES_ENABLED', true),
+    'enabled' => env('RETRIEVER_SERVICES_ENABLED', false),
     'access-token' => [
         'url' => env('RETRIEVER_AUTH_URL', 'https://example.com/token'),
         'key' => env('RETRIEVER_AUTH_KEY', 'api_access_token_key'),
