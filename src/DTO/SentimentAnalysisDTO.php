@@ -20,4 +20,18 @@ class SentimentAnalysisDTO extends BaseDTO
         }
         return $result;
     }
+
+    public static function convertSentimentToNumber(string $sentiment): int
+    {
+        switch ($sentiment) {
+            case 'positive':
+                return 4;
+            case 'neutral':
+                return 5;
+            case 'negative':
+                return 6;
+            default:
+                return 2;
+        }
+    }
 }
